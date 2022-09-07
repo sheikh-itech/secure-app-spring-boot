@@ -1,0 +1,29 @@
+1. Add below 2 dependencies-
+
+		<dependency>
+		   <groupId>org.springframework.boot</groupId>
+		   <artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+
+2. Add at least 1 record to database
+
+[MongoDB-Documents]
+{ "_id" : "sheikh", "user" : "sheikh", "pass" : "$2a$10$IqxnKKtjLisLEnF17MaE5uxOiPxkXf6SZsZ5ALmByndn.858jHhi.", "_class" : "com.module.beans.User" }
+{ "_id" : "hapheej", "user" : "hapheej", "pass" : "$2a$10$nA1FhnpF/7NP8ewJUGXLa.zr5rjzmajXCohwpEuFHV4t/vZ4MsaOO", "_class" : "com.module.beans.User" }
+{ "_id" : "arham", "user" : "arham", "pass" : "$2a$10$mstboQsKBkCC3.h6rjorsOv6t9XbGKB.1YjcmEeFuc9PCI9KxbJqi", "_class" : "com.module.beans.User" }
+
+3. Add static web components inside templates folder [home.html, index.html, login.html, logout.html etc]
+
+4. Create User bean [Along with service & repository]
+
+5. Configure AuthenticationProvider, PasswordEncoder & HttpSecurity [user authentication]
+
+6. Impl==>Implement UserDetailsService [Override its method] for user validation
+
+
+
